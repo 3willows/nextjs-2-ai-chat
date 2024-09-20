@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { useChat } from "ai/react"
 import { useRef, useEffect, useState } from "react"
-import { generate } from "../newPage/actions"
+import { generate } from "../askButton/actions"
 import { readStreamableValue } from "ai/rsc"
 
 export function Chat() {
@@ -23,7 +23,7 @@ export function Chat() {
   return (
     <main className="flex flex-col w-full h-screen max-h-dvh bg-background">
       <header className="p-4 border-b w-full max-w-3xl mx-auto">
-        <h1 className="text-2xl font-bold">AI Chat</h1>
+        <h1 className="text-2xl font-bold"> Chat with 2 LLMs</h1>
       </header>
 
       <section className="p-4">
