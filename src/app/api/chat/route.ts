@@ -11,7 +11,7 @@ const openai = new OpenAI({
 
 export async function POST(req: Request) {
     // Extract the `messages` from the body of the request
-    const { messages } = await req.json();
+    let { messages } = await req.json();
 
     // Request the OpenAI API for the response based on the prompt
     const response = await openai.chat.completions.create({
