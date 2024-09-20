@@ -45,7 +45,10 @@ export function Chat() {
                             ) : (
                                 <li key={index} className="flex flex-row-reverse">
                                     <div className="rounded-xl p-4 bg-background shadow-md flex w-3/4">
-                                        <p className="text-primary"><span className="font-bold">Answer: </span>{m.content}</p>
+                                        <p className="text-primary"><span className="font-bold">Answer from OpenAI: </span>{m.content}</p>
+                                    </div>
+                                    <div className="rounded-xl p-4 bg-background shadow-md flex w-3/4">
+                                        <p className="text-primary"><span className="font-bold">Answer from another LLM (to do): </span>{m.content}</p>
                                     </div>
                                 </li>
                             )}
